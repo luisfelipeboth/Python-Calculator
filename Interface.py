@@ -1,10 +1,9 @@
 import sys
-from tkinter import Button
-from tkinter.font import BOLD
 import PyQt5
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
+#import Controller
 
 class MyMainWindow(QMainWindow):
     def __init__(self, parent = None):
@@ -108,25 +107,3 @@ class MyMainWidget(QWidget):
     def __teste(self):
         for i in self.buttons.items():
             print(i[0])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def main():
-    app = QApplication(sys.argv)
-    win = MyMainWindow()
-    win.show()
-    app.exec_()
-
-if __name__ == '__main__':
-    sys.exit(main())
